@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../input/Input";
+import Input from "../input/input";
 import {FiSearch} from 'react-icons/fi';
 import {BiSend} from 'react-icons/bi';
 import { IoIosNotificationsOutline } from "react-icons/io";

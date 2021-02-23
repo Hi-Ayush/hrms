@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/header/Header'
+import authenticate from '../../hoc/authentication';
 
-export default function Home() {
+ function Home(props) {
+
+    // useEffect(()=>{
+    //     if(!props.isLoggedIn){
+    //         props.history.push('/login');
+    //     }
+    // },[props.isLoggedIn])
     return (
         <div className="home">
             <Header pageHeader="Dashboard"/>
@@ -9,3 +16,4 @@ export default function Home() {
         </div>
     )
 }
+export default authenticate(Home);

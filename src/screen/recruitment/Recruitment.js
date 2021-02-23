@@ -1,7 +1,9 @@
 import React from "react";
+import authenticate from "../../hoc/authentication";
 
-export default function Recruitment(){
+ function Recruitment(){
     return(
         <div>This is Recruitment Page</div>
     )
 }
+export default authenticate(Recruitment)

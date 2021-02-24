@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/button/Button';
 import Card from '../../components/card/Card';
 import Input from '../../components/input/input';
 const Login=(props)=>{
@@ -10,12 +11,15 @@ const Login=(props)=>{
         props.history.push('/');
     }
 
-    return(
-    <Card dimension={{width:100,height:100}}>
-      <Input/>
-        <button onClick={loginClickHandler}>Login</button> 
-          {console.log("hi")}
-    </Card> 
-    )
+    return (
+      <div className="login">
+        <Card  dimension={{ width: 250, height: 350 }}>
+          <div className="login-header"><h3>HRMS</h3></div>
+          <Input type="email" placeholder="Enter email" />
+          <Input type="password" placeholder="Enter password" />
+          <Button className="login-button">Login</Button>
+        </Card>
+      </div>
+    );
 }
 export default Login;

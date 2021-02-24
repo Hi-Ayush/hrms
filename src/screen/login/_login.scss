@@ -1,0 +1,29 @@
+.login{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    .card-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 24px;
+        padding: 24px;
+        border:1px solid $hr_gray4;
+
+    }
+    .login-header{
+            padding: 16px;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            background: $hr_gray5;
+            h3{
+                text-align: center;
+                color: $hr_white;
+            }
+    }
+    .login-button{
+        width:100%;
+        margin-top: 16px;
+    }
+}

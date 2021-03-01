@@ -18,6 +18,8 @@ const Input = ({
   classes={...defaultClasses},
   placeholder,
   onChange,
+  onFocus=()=>{},
+  onBlur=()=>{}
 }) => {
   const {
     inputClassName,
@@ -38,6 +40,8 @@ const Input = ({
           type={type}
           value={value}
           name={name}
+          onFocus={onFocus}
+          onBlur={onBlur}
         />
         {icon}
       </div>
